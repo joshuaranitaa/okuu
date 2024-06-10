@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: steelblue;
+}
+.banner{
+    width: 1366px;
+    height: 700px;
+    background-image: linear-gradient(45deg, #874da270 0%, #c43a3074 100%), url(Imágenes/Bobalo.jpg);
+    background-size: 100% 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+}
+.titulo{
+    font-size: 80px;
+    margin-top: 200px;
+    color:  white;
+    text-align: center;
+}
+.acomodar{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.mover{
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+.cuerpo{
+    width: 1366px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.cuerpo ul{
+    display: flex;
+    padding: 0;
+    width: 600%;
+    background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #ff13627b 67%, #fff70082 100%);
+    animation: slide 16s infinite alternate;
+}
+.cuerpo li{
+    list-style: none;
+    height: 100%;
+}
+.cuerpo img{
+    width: 1366px;
+    opacity: 0.5;
+}
+@keyframes slide{
+    0%, 20%{
+        margin-left: 0%;
+    }
+    25%, 45%{
+        margin-left: -100%;
+    }
+    50%, 70%{
+        margin-left: -200%;
+    }
+    75%, 95%{
+        margin-left: -300%;
+    }
+}
+.scrool{
+    height: 1200px;
+}
+.menu a{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid white;
+    text-decoration: none;
+    color: black;
+    background-color: lightseagreen;
+    width: 250px;
+    height: 80px;
+    line-height: 80px;
+    margin-left: 15px;
+    margin-top: 100px;
+    font-size: 35px;
+}
